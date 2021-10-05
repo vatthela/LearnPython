@@ -11,7 +11,6 @@ class BankAccount:
     @property
     def account_name(self):
         return self._account_name
-
     @property
     def balance(self):
         return self._balance

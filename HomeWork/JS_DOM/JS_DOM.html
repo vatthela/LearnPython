@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="baitapjs.css" />
+  </head>
+  <body>
+    <div class="text">
+      <p id="paragraph1">
+        Đây là đoạn số 1<br />
+        Đoạn văn dùng để thay đổi nội dung
+      </p>
+      <br />
+
+      <p id="paragraph2">
+        Đây là đoạn số 2
+      </p>
+      <br />
+
+      <p id="paragraph3">
+        Đoạn văn tăng giảm FontSize<br />
+        Tăng kích thước font chữ của đoạn văn mong muốn<br />
+        Giảm kích thước font chữ của đoạn văn mong muốn
+
+      </p>
+      <br />
+    </div>
+    
+    <div class="btn-wrapper">
+      <button type="button" onclick="changeColor()">Đổi màu text</button>
+      <button type="button" onclick="changeBgColor()">Đổi màu nền</button>
+      <button type="button" onclick="copyContent()">Đổi nội dung</button>
+      <button type="button" onclick="changeFontSize(30)">Đổi fontsize text</button>
+      <button type="button" onclick="increaseFontSize('paragraph3')">Tăng fontsize text</button>
+      <button type="button" onclick="decreaseFontSize('paragraph3')">Giảm fontsize text</button>
+    </div>
+  </body>
+  <script src="baitapjs.js"></script>
+</html>

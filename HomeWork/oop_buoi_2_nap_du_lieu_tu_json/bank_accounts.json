@@ -2,11 +2,11 @@
     {
         "account_number": "1",
         "account_name": "Tung Lam",
-        "balance": 100
+        "balance": "100"
     },
     {
         "account_number": "2",
         "account_name": "LamBT",
-        "balance": 200
+        "balance": "200"
     }
 ]

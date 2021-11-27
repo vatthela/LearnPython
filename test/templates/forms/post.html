@@ -1,0 +1,13 @@
+{% extends 'layouts/form.html' %}
+{% block title %}Edit post{% endblock %}
+{% block content %}
+    <form method="post" class="form form-reset">
+        <h3 class="form-heading">Edit post <a href="{{ url_for('home') }}" title="Back to homepage"><i
+                class="fa fa-home pull-right"></i></a></h3>
+        {{ form.title(class_ = 'form-control first-input last-input', placeholder = form.title.label.text) }}
+        <br/>
+        {{ form.content(class_ = 'form-control first-input last-input', placeholder = form.content.label.text) }}
+        <br/>
+        <input type="submit" value="Submit" class="btn btn-lg btn-primary btn-block">
+    </form>
+{% endblock %}

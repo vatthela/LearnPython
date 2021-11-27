@@ -60,8 +60,7 @@ class BankAccount:
             reader = csv.reader(file)
 
             for account_number, account_name, balance in reader:
-                accounts.append(
-                    cls(account_number, account_name, int(balance)))
+                accounts.append(cls(account_number, account_name, int(balance)))
 
         return accounts
 
@@ -70,11 +69,10 @@ class BankAccount:
         accounts = []
 
         with open(json_file) as file:
-            reader = json.load(file)
+            reader = json.loads(file)
             print (reader)
             for account_number, account_name, balance in reader:
-                accounts.append(
-                    cls(account_number, account_name, int(balance)))
+                accounts.append(cls(account_number, account_name, int(balance)))
 
         return accounts
 

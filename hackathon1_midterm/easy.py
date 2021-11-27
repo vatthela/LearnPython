@@ -13,7 +13,6 @@ def day_diff(release_date, code_complete_day):
 def alpha_num(sentence):
     list = sentence.split()
     list_result = []
-    print(list)
     for string in list:
         if (string.isalpha() == False):
             list_result.append(string)
